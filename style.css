@@ -1,0 +1,520 @@
+/* RESET GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #040024;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* TÍTULOS */
+h2.titulo {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+}
+
+h2.titulo span {
+  color: #be2c95;
+}
+
+button:hover , form .btn-enviar input:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 8px #9100fe;
+}
+
+/* INTERFACE HEADER */
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.menu-desktop ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.menu-desktop ul li a {
+  display: inline-block;
+  color: #5c5c5c;
+  transition: 0.2s ease-in-out;
+}
+
+.menu-desktop ul li a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.leandracr-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #9100fe;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+/* TOPO DO SITE */
+section.topo-do-site {
+  background-color: #040024;
+  padding: 80px 6%;
+}
+
+.container-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.texto-topo {
+  flex: 1.1;
+  min-width: 300px;
+}
+
+.texto-topo h1 {
+  font-size: 48px;
+  color: white;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.texto-topo h1 span {
+  color: #9100fe;
+}
+
+.texto-topo p {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.texto-topo button {
+  background-color: #9100fe;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 35px;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.texto-topo button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #9100fe;
+}
+
+.imagem-topo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex-img {
+  width: 500px;
+  clip-path: polygon(
+    25% 0%, 75% 0%,
+    100% 50%,
+    75% 100%, 25% 100%,
+    0% 50%
+  );
+  object-fit: cover;
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/* SEÇÃO ESPECIALIDADES */
+section.especialidades {
+  padding: 80px 4%;
+  background-color: #040024;
+}
+
+/* TÍTULO */
+h2.titulo {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2.titulo span {
+  color: #9100fe;
+}
+
+/* GRID DOS CARDS */
+.grid-especialidades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+@media (max-width: 1024px) {
+  .grid-especialidades {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-especialidades {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ESTILO DOS CARDS */
+.especialidades-box {
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  background: transparent;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.especialidades-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ffffff3a;
+}
+
+.especialidades-box i {
+  font-size: 70px;
+  color: #9100fe;
+}
+
+.especialidades-box h3 {
+  font-size: 22px;
+  margin: 15px 0 10px;
+  font-weight: 600;
+}
+
+.especialidades-box p {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.img-sobre {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.img-sobre img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: cover;
+}
+
+/* ... demais estilos mantidos ... */
+
+section.sobre {
+    padding: 80px 4%;
+}
+
+section.sobre .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap; /* responsivo */
+}
+
+.img-sobre {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 1 300px;
+}
+
+.img-sobre img {
+    width: 100%;
+    max-width: 500px;
+    object-fit: cover;
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+    flex: 1 1 300px;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: #9100fe;
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.leandracr-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #9100fe;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+section.portfolio {
+  padding: 100px 4%;
+  box-shadow: 0 0 40px 10px #ffffff1d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.portfolio .flex{
+  justify-content: space-around; 
+  margin-top: 600px; 
+}
+
+.portfolio-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-galeria {
+  display: flex;
+  gap: 5vw;
+}
+
+.img-port {
+  width: 20vw;
+  height: 60vh;
+  background-size: cover;
+  background-position: 100% 0%; 
+  transition: 8s;
+  cursor: pointer;
+  border-radius: 40px; 
+  position: relative; 
+}
+
+.img-port:hover{
+  background-position: 100% 100%; 
+}
+
+.overlay {
+  position: absolute; 
+  top: 0;
+  left: 0; 
+  width: 100%;
+  height: 100%; 
+  background-color:#000000b8; 
+  border-radius: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  font-size: 24px;
+  font-weight: 600; 
+  color: #fff; 
+  opacity: 0;
+  trasition: .5s; 
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+section.formulario {
+  padding: 40px 4%;
+  background-color: #040024;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 100vh;
+}
+
+section.formulario .interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+
+form {
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px; 
+}
+
+
+.btn-enviar input[type="submit"] {
+  background: #9100fe;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 120px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+
+form input,
+form textarea {
+  width: 100%;
+  background-color: rgb(55, 2, 95);
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 20px;
+}
+
+form input::placeholder {
+  color:rgba(182, 182, 182, 0.82); 
+}
+
+form textarea {
+  resize: none;
+  height: 200px; 
+}
+
+form textarea::placeholder {
+    color:rgba(182, 182, 182, 0.82); 
+}
+
+footer {
+  background-color: #040024;
+  padding: 40px 4% 20px;
+  color: white;
+  box-shadow: 0 0 40px 10px #ffffff1d; 
+}
+
+/* Parte de cima do footer: logo e redes */
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Linha roxa horizontal */
+.footer-linha {
+  height: 1px;
+  background-color: #9100fe;
+  margin: 5px 0;
+  width: 1200px;
+  max-width: 100%;
+  margin: 3px auto;
+}
+
+/* Parte de baixo: email centralizado */
+.footer-bottom {
+  text-align: left;
+}
+
+.footer-bottom p {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+}
+
+.footer-bottom p i {
+  color: #9100fe;
+  font-size: 20px;
+}
+
+.footer-bottom a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Estilo da logo */
+.logo-footer img {
+  height: 60px;
+}
+
+/* Redes sociais */
+.footer-direita .leandracr-social {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+}
+
+.footer-direita .leandracr-social button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #9100fe;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-direita .leandracr-social button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #9100fe;
+}
+
+
+
+
+
