@@ -8,7 +8,7 @@ Aqui apresento meus trabalhos, minhas especialidades e um pouco sobre mim. Tudo 
 
 ## 🌐 Acesse o site
 
-🔗 [https://seu-usuario.github.io/leandracr-site](https://seu-usuario.github.io/leandracr-site)  
+🔗 [https://LeandraCR.github.io/leandracr-site](https://seu-usuario.github.io/leandracr-site)  
 
 ---
 
