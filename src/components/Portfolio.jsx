@@ -6,19 +6,19 @@ const visualIdentityProjects = [
   {
     image: `${import.meta.env.BASE_URL}imagens/id-visual-1.png`,
     title: 'Identidade Visual - HOD',
-    url: `${import.meta.env.BASE_URL}imagens/HOD.pdf`,
+    url: `${import.meta.env.BASE_URL}HOD.pdf`, 
     isPdf: true,
   },
   {
     image: `${import.meta.env.BASE_URL}imagens/id-visual-2.png`,
     title: 'Identidade Visual - Berchmans',
-    url: `${import.meta.env.BASE_URL}imagens/Berchmans.pdf`,
+    url: `${import.meta.env.BASE_URL}Berchmans.pdf`, 
     isPdf: true,
   },
   {
     image: `${import.meta.env.BASE_URL}imagens/id-visual-3.png`,
     title: 'Identidade Visual - Baruk Tribe',
-    url: `${import.meta.env.BASE_URL}imagens/BarukTribe.pdf`,
+    url: `${import.meta.env.BASE_URL}BarukTribe.pdf`, 
     isPdf: true,
   },
 ];
@@ -56,7 +56,7 @@ const ProjectCard = ({ image, title, url, isPdf }) => {
 // --- Componente Principal (Não precisa de alteração) ---
 const Portfolio = () => {
   return (
-    <section className="bg-[#040024] py-20 px-4 sm-px-6 lg:px-8" id="projetos">
+    <section className="bg-[#040024] py-20 px-4 sm:px-6 lg:px-8" id="projetos">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-white mb-16">
           MEU <span className="text-[#9100fe]">PORTFÓLIO.</span>
