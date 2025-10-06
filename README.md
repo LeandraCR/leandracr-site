@@ -1,16 +1,57 @@
-# React + Vite
+# Portfólio Pessoal - Leandra Ramos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Status do Deploy](https://github.com/LeandraCR/leandracr-site/actions/workflows/deploy.yml/badge.svg)
 
-Currently, two official plugins are available:
+Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar minhas habilidades em design, UI/UX e desenvolvimento front-end. O projeto foi originalmente construído com HTML e CSS puro e, como parte do meu desenvolvimento contínuo, foi completamente migrado para uma arquitetura moderna utilizando React, Vite e Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ✨ [Acesse a versão final aqui!](https://leandracr.github.io/leandracr-site/) ✨
 
-## React Compiler
+![Preview do Portfólio](https://leandracr.github.io/leandracr-site/imagens/Pessoa.png)
+*(Dica: Você pode tirar um print da sua página final, adicionar a imagem na pasta `public/imagens` com o nome `preview.png` e mudar o link acima para `/imagens/preview.png`!)*
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este projeto foi construído com as seguintes tecnologias:
+
+* **React:** Para a construção de uma interface de usuário reativa e baseada em componentes.
+* **Vite:** Como ferramenta de build, proporcionando um ambiente de desenvolvimento extremamente rápido.
+* **Tailwind CSS:** Para a estilização, utilizando uma abordagem "utility-first" que permite a criação de designs complexos e responsivos de forma ágil.
+* **React Scroll & React Icons:** Para funcionalidades como rolagem suave e a inclusão de ícones.
+* **GitHub Actions:** Para o processo de Integração Contínua e Deploy Contínuo (CI/CD), automatizando a publicação do site no GitHub Pages a cada novo `push` na branch `main`.
+
+## 🎨 Funcionalidades
+
+* **Design Responsivo (Mobile-First):** Totalmente adaptável a qualquer tamanho de tela, de celulares a desktops.
+* **Menu Hambúrguer:** Menu de navegação otimizado para a experiência mobile.
+* **Rolagem Suave (Smooth Scrolling):** Navegação fluida entre as seções da página.
+* **Galeria de Projetos Dinâmica:** Seções separadas para projetos de Identidade Visual e Interfaces, com links para download de PDFs e visualização de projetos externos.
+* **Deploy Automatizado:** O site é atualizado automaticamente a cada nova alteração enviada para o repositório.
+
+## 🛠️ Como Rodar o Projeto Localmente
+
+Para rodar este projeto na sua máquina, siga os passos:
+
+1.  Clone o repositório:
+    ```bash
+    git clone [https://github.com/LeandraCR/leandracr-site.git](https://github.com/LeandraCR/leandracr-site.git)
+    ```
+2.  Navegue até a pasta do projeto:
+    ```bash
+    cd leandracr-site
+    ```
+3.  Instale as dependências:
+    ```bash
+    npm install
+    ```
+4.  Inicie o servidor de desenvolvimento:
+    ```bash
+    npm run dev
+    ```
+
+---
+
+Feito com ❤️ por **Leandra Ramos**.
+
+[LinkedIn](https://www.linkedin.com/in/leandra-costa-ramos-501462233/) | [GitHub](https://github.com/LeandraCR)
