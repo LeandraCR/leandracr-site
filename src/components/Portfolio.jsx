@@ -8,19 +8,19 @@ const visualIdentityProjects = [
   {
     image: `${import.meta.env.BASE_URL}imagens/id-visual-1.png`,
     title: 'Identidade Visual - HOD',
-    url: `${import.meta.env.BASE_URL}HOD.pdf`,
+    url: `${import.meta.env.BASE_URL}imagens/HOD.pdf`, // <--- Corrigido
     isPdf: true
   },
   {
     image: `${import.meta.env.BASE_URL}imagens/id-visual-2.png`,
     title: 'Identidade Visual - Berchmans',
-    url: `${import.meta.env.BASE_URL}Berchmans.pdf`,
+    url: `${import.meta.env.BASE_URL}imagens/Berchmans.pdf`, // <--- Corrigido
     isPdf: true
   },
   {
     image: `${import.meta.env.BASE_URL}imagens/id-visual-3.png`,
     title: 'Identidade Visual - Baruk Tribe',
-    url: `${import.meta.env.BASE_URL}BarukTribe.pdf`,
+    url: `${import.meta.env.BASE_URL}imagens/BarukTribe.pdf`, // <--- Corrigido
     isPdf: true
   },
 ];
