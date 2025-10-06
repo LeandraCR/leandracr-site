@@ -1,32 +1,24 @@
 // src/components/Portfolio.jsx
 import React from 'react';
 
-// Importe cada imagem e PDF diretamente no código.
-import idVisual1 from '/imagens/id-visual-1.png';
-import idVisual2 from '/imagens/id-visual-2.png';
-import idVisual3 from '/imagens/id-visual-3.png';
-import pdfHOD from '/imagens/HOD.pdf';
-import pdfBerchmans from '/imagens/Berchmans.pdf';
-import pdfBarukTribe from '/imagens/BarukTribe.pdf';
-
 // --- Dados dos Projetos ---
 const visualIdentityProjects = [
   {
-    image: idVisual1, // Use a variável importada.
+    image: `${import.meta.env.BASE_URL}imagens/id-visual-1.png`,
     title: 'Identidade Visual - HOD',
-    url: pdfHOD,
+    url: `${import.meta.env.BASE_URL}imagens/HOD.pdf`,
     isPdf: true,
   },
   {
-    image: idVisual2,
+    image: `${import.meta.env.BASE_URL}imagens/id-visual-2.png`,
     title: 'Identidade Visual - Berchmans',
-    url: pdfBerchmans,
+    url: `${import.meta.env.BASE_URL}imagens/Berchmans.pdf`,
     isPdf: true,
   },
   {
-    image: idVisual3,
+    image: `${import.meta.env.BASE_URL}imagens/id-visual-3.png`,
     title: 'Identidade Visual - Baruk Tribe',
-    url: pdfBarukTribe,
+    url: `${import.meta.env.BASE_URL}imagens/BarukTribe.pdf`,
     isPdf: true,
   },
 ];
@@ -64,7 +56,7 @@ const ProjectCard = ({ image, title, url, isPdf }) => {
 // --- Componente Principal (Não precisa de alteração) ---
 const Portfolio = () => {
   return (
-    <section className="bg-[#040024] py-20 px-4 sm:px-6 lg:px-8" id="projetos">
+    <section className="bg-[#040024] py-20 px-4 sm-px-6 lg:px-8" id="projetos">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-white mb-16">
           MEU <span className="text-[#9100fe]">PORTFÓLIO.</span>
