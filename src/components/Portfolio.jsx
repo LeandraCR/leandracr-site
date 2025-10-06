@@ -1,43 +1,40 @@
 // src/components/Portfolio.jsx
 import React from 'react';
 
-// ===================================================================
-// Seção de projetos de Identidade Visual (PDFs) - CAMINHOS CORRIGIDOS!
-// ===================================================================
+// PASSO 1: Importe cada imagem e PDF como se fosse um módulo.
+import idVisual1 from '/imagens/id-visual-1.png';
+import idVisual2 from '/imagens/id-visual-2.png';
+import idVisual3 from '/imagens/id-visual-3.png';
+import pdfHOD from '/imagens/HOD.pdf';
+import pdfBerchmans from '/imagens/Berchmans.pdf';
+import pdfBarukTribe from '/imagens/BarukTribe.pdf';
+
+
+// --- Dados dos Projetos ---
 const visualIdentityProjects = [
   {
-    image: '/leandracr-site/imagens/id-visual-1.png',
+    image: idVisual1, // PASSO 2: Use a variável que você importou.
     title: 'Identidade Visual - HOD',
-    url: '/leandracr-site/imagens/HOD.pdf',
+    url: pdfHOD,
     isPdf: true,
   },
   {
-    image: '/leandracr-site/imagens/id-visual-2.png',
+    image: idVisual2, // E aqui...
     title: 'Identidade Visual - Berchmans',
-    url: '/leandracr-site/imagens/Berchmans.pdf',
+    url: pdfBerchmans,
     isPdf: true,
   },
   {
-    image: '/leandracr-site/imagens/id-visual-3.png',
+    image: idVisual3, // E aqui.
     title: 'Identidade Visual - Baruk Tribe',
-    url: '/leandracr-site/imagens/BarukTribe.pdf',
+    url: pdfBarukTribe,
     isPdf: true,
   },
 ];
 
-// ===================================================================
-// (Exemplo futuro) Seção de Telas, Sites, Landing Pages, etc.
-// ===================================================================
-const webDesignProjects = [
-  // {
-  //   image: '/leandracr-site/imagens/tela-site-1.png',
-  //   title: 'Landing Page para Startup',
-  //   url: 'https://link-para-o-site.com',
-  //   isPdf: false,
-  // },
-];
+const webDesignProjects = [];
 
-// --- Componente do Card ---
+// --- Componente do Card (Não precisa de alteração) ---
 const ProjectCard = ({ image, title, url, isPdf }) => {
   const linkProps = isPdf ? { download: true } : {};
   const subtitle = isPdf ? 'Clique para baixar o PDF' : 'Clique para ver o projeto';
@@ -65,7 +62,8 @@ const ProjectCard = ({ image, title, url, isPdf }) => {
   );
 };
 
-// --- Componente Principal ---
+
+// --- Componente Principal (Não precisa de alteração) ---
 const Portfolio = () => {
   return (
     <section className="bg-[#040024] py-20 px-4 sm:px-6 lg:px-8" id="projetos">
