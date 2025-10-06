@@ -1,7 +1,7 @@
 // src/components/Portfolio.jsx
 import React from 'react';
 
-// PASSO 1: Importe cada imagem e PDF como se fosse um módulo.
+// Importe cada imagem e PDF diretamente no código.
 import idVisual1 from '/imagens/id-visual-1.png';
 import idVisual2 from '/imagens/id-visual-2.png';
 import idVisual3 from '/imagens/id-visual-3.png';
@@ -9,23 +9,22 @@ import pdfHOD from '/imagens/HOD.pdf';
 import pdfBerchmans from '/imagens/Berchmans.pdf';
 import pdfBarukTribe from '/imagens/BarukTribe.pdf';
 
-
 // --- Dados dos Projetos ---
 const visualIdentityProjects = [
   {
-    image: idVisual1, // PASSO 2: Use a variável que você importou.
+    image: idVisual1, // Use a variável importada.
     title: 'Identidade Visual - HOD',
     url: pdfHOD,
     isPdf: true,
   },
   {
-    image: idVisual2, // E aqui...
+    image: idVisual2,
     title: 'Identidade Visual - Berchmans',
     url: pdfBerchmans,
     isPdf: true,
   },
   {
-    image: idVisual3, // E aqui.
+    image: idVisual3,
     title: 'Identidade Visual - Baruk Tribe',
     url: pdfBarukTribe,
     isPdf: true,
@@ -62,7 +61,6 @@ const ProjectCard = ({ image, title, url, isPdf }) => {
   );
 };
 
-
 // --- Componente Principal (Não precisa de alteração) ---
 const Portfolio = () => {
   return (
@@ -71,8 +69,6 @@ const Portfolio = () => {
         <h2 className="text-4xl font-bold text-center text-white mb-16">
           MEU <span className="text-[#9100fe]">PORTFÓLIO.</span>
         </h2>
-
-        {/* Identidade Visual */}
         <div className="mb-20">
           <h3 className="text-3xl font-semibold text-white mb-8 text-center md:text-left">
             Identidade Visual
@@ -83,8 +79,6 @@ const Portfolio = () => {
             ))}
           </div>
         </div>
-
-        {/* Telas e Interfaces */}
         <div>
           <h3 className="text-3xl font-semibold text-white mb-8 text-center md:text-left">
             Telas e Interfaces
