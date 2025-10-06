@@ -2,25 +2,25 @@
 import React from 'react';
 
 // ===================================================================
-// Seção de projetos de Identidade Visual (PDFs) - JÁ COM SEUS PROJETOS!
+// Seção de projetos de Identidade Visual (PDFs) - CAMINHOS CORRIGIDOS!
 // ===================================================================
 const visualIdentityProjects = [
   {
-    image: '/imagens/id-visual-1.png',
+    image: `${import.meta.env.BASE_URL}imagens/id-visual-1.png`,
     title: 'Identidade Visual - HOD',
-    url: '/HOD.pdf',
+    url: `${import.meta.env.BASE_URL}HOD.pdf`,
     isPdf: true
   },
   {
-    image: '/imagens/id-visual-2.png',
+    image: `${import.meta.env.BASE_URL}imagens/id-visual-2.png`,
     title: 'Identidade Visual - Berchmans',
-    url: '/Berchmans.pdf',
+    url: `${import.meta.env.BASE_URL}Berchmans.pdf`,
     isPdf: true
   },
   {
-    image: '/imagens/id-visual-3.png',
+    image: `${import.meta.env.BASE_URL}imagens/id-visual-3.png`,
     title: 'Identidade Visual - Baruk Tribe',
-    url: '/BarukTribe.pdf',
+    url: `${import.meta.env.BASE_URL}BarukTribe.pdf`,
     isPdf: true
   },
 ];
@@ -31,7 +31,7 @@ const visualIdentityProjects = [
 const webDesignProjects = [
   // Exemplo de como você adicionaria um projeto de tela no futuro:
   // {
-  //   image: '/imagens/tela-site-1.png',
+  //   image: `${import.meta.env.BASE_URL}imagens/tela-site-1.png`,
   //   title: 'Landing Page para Startup',
   //   url: 'https://link-para-o-site.com', // Link para o site/protótipo
   //   isPdf: false 

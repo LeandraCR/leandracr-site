@@ -6,9 +6,6 @@ Este é o repositório do meu portfólio pessoal, desenvolvido para apresentar m
 
 ### ✨ [Acesse a versão final aqui!](https://leandracr.github.io/leandracr-site/) ✨
 
-![Preview do Portfólio](https://leandracr.github.io/leandracr-site/imagens/Pessoa.png)
-*(Dica: Você pode tirar um print da sua página final, adicionar a imagem na pasta `public/imagens` com o nome `preview.png` e mudar o link acima para `/imagens/preview.png`!)*
-
 ---
 
 ## 🚀 Tecnologias Utilizadas

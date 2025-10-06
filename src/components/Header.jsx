@@ -19,7 +19,7 @@ const Header = () => {
     ...linkProps,
     className: "text-4xl text-gray-300 hover:text-white transition duration-300",
     // Quando um link for clicado no menu mobile, fechamos o menu
-    onClick: () => setIsMenuOpen(false) 
+    onClick: () => setIsMenuOpen(false)
   };
 
   return (
@@ -29,10 +29,10 @@ const Header = () => {
           {/* Logotipo */}
           <div>
             <a href="#">
-              <img className="h-16" src="/imagens/Logo.png" alt="Logo da LeandraCR" />
+              <img className="h-16" src={`${import.meta.env.BASE_URL}imagens/Logo.png`} alt="Logo da LeandraCR" />
             </a>
           </div>
-          
+
           {/* Menu de Navegação para DESKTOP (o que já existia) */}
           <nav className="hidden md:flex">
             <ul className="flex items-center space-x-10">
@@ -42,12 +42,12 @@ const Header = () => {
               <li><Link to="projetos" {...linkProps}>Projetos</Link></li>
             </ul>
           </nav>
-          
+
           {/* Botão de Contato para DESKTOP */}
           <div className="hidden md:block">
-            <a 
-              href="https://wa.me/5533998529357?text=Oi%2C%20tudo%20bem%3F%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar!" 
-              target="_blank" 
+            <a
+              href="https://wa.me/5533998529357?text=Oi%2C%20tudo%20bem%3F%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar!"
+              target="_blank"
               rel="noopener noreferrer"
             >
               <button className="py-2.5 px-10 bg-[#9100fe] text-white text-lg font-semibold rounded-full hover:scale-105 ...">
@@ -79,22 +79,22 @@ const Header = () => {
         transition-transform duration-300 ease-in-out
         ${isMenuOpen ? 'translate-x-0' : 'translate-x-full'}
       `}>
-          <ul className="flex flex-col items-center gap-8">
-            <li><Link to="inicio" {...mobileLinkProps}>Início</Link></li>
-            <li><Link to="especialidades" {...mobileLinkProps}>Especialidades</Link></li>
-            <li><Link to="sobre" {...mobileLinkProps}>Sobre</Link></li>
-            <li><Link to="projetos" {...mobileLinkProps}>Projetos</Link></li>
-          </ul>
-          <a 
-            href="https://wa.me/5533998529357?text=Oi%2C%20tudo%20bem%3F%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar!" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="mt-8"
-          >
-            <button className="py-3 px-12 bg-[#9100fe] text-white text-xl font-semibold rounded-full hover:scale-105 ...">
-              Contato
-            </button>
-          </a>
+        <ul className="flex flex-col items-center gap-8">
+          <li><Link to="inicio" {...mobileLinkProps}>Início</Link></li>
+          <li><Link to="especialidades" {...mobileLinkProps}>Especialidades</Link></li>
+          <li><Link to="sobre" {...mobileLinkProps}>Sobre</Link></li>
+          <li><Link to="projetos" {...mobileLinkProps}>Projetos</Link></li>
+        </ul>
+        <a
+          href="https://wa.me/5533998529357?text=Oi%2C%20tudo%20bem%3F%20Vi%20seu%20portfólio%20e%20gostaria%20de%20conversar!"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-8"
+        >
+          <button className="py-3 px-12 bg-[#9100fe] text-white text-xl font-semibold rounded-full hover:scale-105 ...">
+            Contato
+          </button>
+        </a>
       </div>
     </>
   );

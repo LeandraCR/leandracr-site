@@ -10,8 +10,7 @@ const About = () => {
 
                 {/* Lado da Imagem (tamanho aumentado) */}
                 <div className="md:w-1/2 flex justify-center">
-                    <img
-                        src="/imagens/Foto.png"
+                    <img src={`${import.meta.env.BASE_URL}imagens/Foto.png`}
                         alt="Foto de Leandra Ramos"
                         className="rounded-2xl max-w-md w-full shadow-lg shadow-[#9100fe]/20 mx-auto"
                     />
