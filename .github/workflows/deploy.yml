@@ -5,6 +5,10 @@ on:
     branches:
       - main # Roda a ação sempre que houver um push na branch 'main'
 
+# ADICIONAMOS ESTE BLOCO PARA DAR PERMISSÃO DE ESCRITA
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Usa um servidor Linux para rodar os comandos
