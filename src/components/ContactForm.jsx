@@ -41,9 +41,9 @@ const ContactForm = () => {
             className="w-full bg-[#0a062e] border-2 border-transparent focus:border-[#9100fe] p-4 rounded-xl text-white outline-none transition-all duration-300 h-40 resize-none"
           ></textarea>
 
-          {/* Campos ocultos do FormSubmit */}
+          {/* Campos ocultos do FormSubmit - URL CORRIGIDA AQUI */}
           <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_next" value="https://leandracr.github.io/leandracr-site/obrigado.html" />
+          <input type="hidden" name="_next" value="https://leandracr-site.vercel.app/obrigado.html" />
           
           <div className="text-center">
             <input 
