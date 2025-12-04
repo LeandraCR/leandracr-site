@@ -29,14 +29,21 @@ const visualIdentityProjects = [
 ];
 
 // ===================================================================
-// NOVO PROJETO ADICIONADO AQUI!
+// PROJETOS WEB (DM CONFEITARIA ADICIONADO!)
 // ===================================================================
 const webDesignProjects = [
   {
-    image: `${import.meta.env.BASE_URL}imagens/salao-elegance-preview.png`, // <-- ATENÇÃO AQUI
+    image: `${import.meta.env.BASE_URL}imagens/salao-elegance-preview.png`,
     title: 'Site Institucional - Salão Elegance',
     description: 'Website responsivo para um salão de beleza, focado em agendamentos e apresentação de serviços.',
     url: 'https://salao-elegance-site.vercel.app/',
+    isPdf: false 
+  },
+  {
+    image: `${import.meta.env.BASE_URL}imagens/dm-confeitaria.png`, 
+    title: 'Catálogo Online - DM Confeitaria',
+    description: 'Site desenvolvido para uma loja de doces artesanais, destacando o cardápio e facilitando pedidos.',
+    url: 'https://www.dmconfeitariaoficial.com/', 
     isPdf: false 
   },
 ];
