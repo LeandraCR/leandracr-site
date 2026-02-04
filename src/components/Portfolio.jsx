@@ -29,14 +29,14 @@ const visualIdentityProjects = [
 ];
 
 // ===================================================================
-// PROJETOS WEB (DM CONFEITARIA ADICIONADO!)
+// PROJETOS WEB (STUDIO MARILENE RAMOS ATUALIZADO!)
 // ===================================================================
 const webDesignProjects = [
   {
-    image: `${import.meta.env.BASE_URL}imagens/salao-elegance-preview.png`,
-    title: 'Site Institucional - Salão Elegance',
-    description: 'Website responsivo para um salão de beleza, focado em agendamentos e apresentação de serviços.',
-    url: 'https://salao-elegance-site.vercel.app/',
+    image: `${import.meta.env.BASE_URL}imagens/mr.png`,
+    title: 'Site - Studio Marilene Ramos',
+    description: 'Website responsivo para salão de beleza, focado em agendamentos online e catálogo de serviços.',
+    url: 'https://www.studiomarileneramos.com.br/',
     isPdf: false 
   },
   {
